@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="44099875-50C7-C89E-04B8-B56CDC63C9FC" mainViewID="63DAFA4C-6788-2BD6-2E4D-D740511210D0">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:48:43 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficinal</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>query_global_solution_2024_oficial.sql</fileName>
+<pathName>/Users/claudiobispo/Documents</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>
