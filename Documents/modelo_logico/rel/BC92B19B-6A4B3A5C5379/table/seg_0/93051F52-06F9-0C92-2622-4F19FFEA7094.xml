@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93051F52-06F9-0C92-2622-4F19FFEA7094" name="TIPORESIDUO">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:27 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>ECCC3876-9D45-2BE1-4F3A-C56C00756B46</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_residuo" id="B2748F33-F298-4325-3809-515F5E423C43">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>0FE19F5A-8D58-6C16-6985-4FD02AC503DE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="tipo" id="80FF67E5-719A-9B86-2458-4DC66AB78BEF">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>B3FA89CF-2EB5-E400-2C2A-4F12A3C04A1B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="E01EA493-E325-BDC5-92B1-E7121A01CD64">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>CD63E165-A653-7378-1CAD-67D4D35EFB59</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0CC9A83-26E8-3B9A-D40A-F9A33FF2DA0E" name="tiporesiduo_pk">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>87372A04-CD94-2A80-8E6B-DEEC01C57E09</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2748F33-F298-4325-3809-515F5E423C43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

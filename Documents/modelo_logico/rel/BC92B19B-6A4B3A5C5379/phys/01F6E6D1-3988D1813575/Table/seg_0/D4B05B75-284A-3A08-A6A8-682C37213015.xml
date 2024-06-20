@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="OCORRENCIA" directorySegmentName="seg_0" id="D4B05B75-284A-3A08-A6A8-682C37213015">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:27 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_solicitacao" id="46B0BE96-C4D3-8919-B56F-9DB5308F7B3B">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="latitude" id="48EADBF2-6455-5096-4B95-2E56516F6D06">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefone" id="4AFD0268-D623-EB4F-D784-41FE7ED873AA">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_animal" id="57498A81-C1BD-8BFF-41B9-A0D22BB0246A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="longitude" id="7A9CD38C-F33D-E4E3-B2D6-5BF60908A9C9">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_usuario" id="7AF90511-9241-425B-5759-7FA2EB3AC531">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="condicao" id="A09A35C1-1E82-99A3-3314-AB916D076940">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descricao" id="A849DED4-E999-B9FA-1836-CCCF0E166D2A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="imagem" id="B716EE35-9109-4EE7-AF88-77CB573C4823">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_solicitacao" id="C2FB08D9-E8A3-FA19-BD27-6E7C0C9E478A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tipo_residuo" id="EC78F4A7-0DA9-969F-585F-5570BE76DAFA">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_usuario_ocorrencia" id="7D4BF7E2-FB9A-2667-B76D-D04DD9A17B2D">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_tipo_residuo" id="A6F27950-856A-E3D7-C86E-8743A9395FED">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_animal" id="DCF64093-88C1-D28F-D5D2-6F3EA71C9F5E">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ocorrencia_pk" id="8C56CF04-E2C7-1690-19DE-1482BD179DBE">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

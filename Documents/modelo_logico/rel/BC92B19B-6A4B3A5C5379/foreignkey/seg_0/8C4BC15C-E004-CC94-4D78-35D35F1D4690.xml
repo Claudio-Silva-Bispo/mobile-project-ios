@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8C4BC15C-E004-CC94-4D78-35D35F1D4690" containerWithKeyObject="D4B05B75-284A-3A08-A6A8-682C37213015" localFKIndex="A6F27950-856A-E3D7-C86E-8743A9395FED" name="fk_tipo_residuo">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<importedID>1FED0D45-A2CC-0476-C3A4-C01994B1C476</importedID>
+<referredTableLongName>TIPORESIDUO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>93051F52-06F9-0C92-2622-4F19FFEA7094</referredTableID>
+<keyObject>E0CC9A83-26E8-3B9A-D40A-F9A33FF2DA0E</keyObject>
+<referredKeyID>E0CC9A83-26E8-3B9A-D40A-F9A33FF2DA0E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_tipo_residuo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

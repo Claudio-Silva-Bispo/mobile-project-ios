@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="INVESTIDOR" directorySegmentName="seg_0" id="8FEEF3B3-BA8F-CACF-D288-CA7082141121">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="telefone" id="2DB3BF78-1652-FC39-1AC4-000446B8DEC1">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="3E7E7DDD-1200-F24B-7A31-A8179E99C14F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="quantia_contribuida" id="65277700-71B0-879E-88FA-43EADD5D1191">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nome_empresa" id="67309B5F-51D3-CACA-1081-FF27CC3AEDE7">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_investidor" id="7040F13D-1F4C-FDDD-36F9-5B882495263F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="nome" id="902D4BBA-6B42-C437-1CE7-22C1AAB1C7B0">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_investimento" id="94CE6984-EB92-E0CB-11AC-D9E9DED488C2">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descricao" id="E936648C-4BBD-F48F-E06B-CA020D6F0B2B">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="investidor_pk" id="8FB872D7-79C2-4F33-9A8A-91D40D59B931">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

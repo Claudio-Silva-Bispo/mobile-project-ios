@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="530AA2F8-1D77-7A06-DDB1-7B9FDD8FA3E2" name="ANIMAL">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>6735191C-3627-2CA7-8B0F-A2592E861C7D</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id animal" id="D0D45F28-7D28-8BFF-82D0-CCF3DEFFC589">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>9B0E4D46-56C5-36EF-6413-CCF96D227765</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome animal" id="4CDF0D2A-7090-F78B-2BBC-F7DF51FA91F6">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>54C12E59-1140-CBCB-3205-AFBAC4D60EB2</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="especie animal" id="D817337E-E748-04AE-B4D4-6B416444D481">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>33CBE85E-A3C5-FBE1-525C-984A720F2781</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao animal" id="A3FE54F5-589A-F298-4328-9CB0DD86879A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>84536A3F-CA86-32B3-CD88-4A2AE426A7F6</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id condicao" id="E814001F-564B-0196-E29E-6D332CC4040A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>D5842AFB-5EC5-A94C-BDD1-01CC18AFF619</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3592A97A-46DB-047D-777A-2144ADC574B3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50F3FED5-7C6B-D36C-FFF0-B11671FF60C1" name="animal pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>A117532B-B561-F3D2-4067-2D50652C19FD</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0D45F28-7D28-8BFF-82D0-CCF3DEFFC589</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

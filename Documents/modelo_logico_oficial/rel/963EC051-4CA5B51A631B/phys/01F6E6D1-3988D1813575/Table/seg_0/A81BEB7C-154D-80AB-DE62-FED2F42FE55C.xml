@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CONDICAOANIMAL" directorySegmentName="seg_0" id="A81BEB7C-154D-80AB-DE62-FED2F42FE55C">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_condicao" id="B35DEF56-B8DE-2507-0544-940B7A6D2ED7">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="condicao" id="D7D61ECD-11F5-0AD2-DE0F-06080FB695FB">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="condicaoanimal_pk" id="3FA77553-AE00-F216-1214-775A4ACF5059">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

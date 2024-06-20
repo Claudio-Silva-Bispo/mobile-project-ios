@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77C6445F-DECF-793C-A4E6-C23A44D2BBA6" name="TIPORESIDUO">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>93051F52-06F9-0C92-2622-4F19FFEA7094</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tipo residuo" id="E711A97F-BE8A-3CC0-C595-3A5E9BAA48A4">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>B2748F33-F298-4325-3809-515F5E423C43</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="CD12BA1B-90E5-74BB-BD6C-2E42BF10C997">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>80FF67E5-719A-9B86-2458-4DC66AB78BEF</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="E17F1DE6-4DE5-3571-2D06-7640633834EE">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>E01EA493-E325-BDC5-92B1-E7121A01CD64</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1808A9C1-4879-B544-94DF-35650E20C95C" name="tiporesiduo pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>E0CC9A83-26E8-3B9A-D40A-F9A33FF2DA0E</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E711A97F-BE8A-3CC0-C595-3A5E9BAA48A4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

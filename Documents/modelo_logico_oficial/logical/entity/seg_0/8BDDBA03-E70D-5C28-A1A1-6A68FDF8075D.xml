@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BDDBA03-E70D-5C28-A1A1-6A68FDF8075D" name="FORMS FEEDBACK">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>F40D6047-37D8-70A7-6B5A-36AED50B217B</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id feedback" id="1AD07009-DB97-34C5-DD7A-A006E2D2FD48">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>0B808D1F-9D6F-7DF0-080A-4E11C2A78DE9</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>D5AF5481-6B1A-2C1C-A61E-F81186915B24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="A3DC0F32-39A3-32AB-3038-FA23572B955F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>4625AFED-079F-39B7-F806-EF1BD4531BA3</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="81017493-8FC5-FC81-864F-8D9EC65E41D8">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>2501A6F0-82DE-149F-61EF-C6A1D5E5026E</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="29F18277-0941-56C2-2B11-1CC13F564651">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>3D7284C3-17E5-DABF-DA7F-582F5C63CE62</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nota" id="D227FB7A-4940-AAB9-6FD2-D30AEEE7475F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>21077935-1C5E-0AF6-584F-5D81D411083E</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>2D2FAA08-C044-6F74-A84E-59B6DC17ECB7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="E089D8E6-3454-5742-0221-2A259A4B385D">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>281A3DA1-C9FF-8C13-736F-029983D00C0C</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data feedback" id="1E4AE55F-1CC2-BBE3-9B57-4CD6AB145AE5">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>F39530AD-B827-4CDA-120B-5DF3BC2A71F4</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>D5AF5481-6B1A-2C1C-A61E-F81186915B24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1289830-07AE-C086-69D6-11A786D9E841" name="forms feedback pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>56817120-F7EC-D3F0-481A-7E66D5C0C5E4</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AD07009-DB97-34C5-DD7A-A006E2D2FD48</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_tipo_login" directorySegmentName="seg_0" id="2EC705B0-8451-51C9-CBA1-BF4EEAB6C933">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>C8F6253C-9940-628B-4AEE-5AD1FC31A993</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<sourcePk>082E03B5-4AE0-F5DF-DDBF-C958E88B470C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F9830A7A-738E-6CA5-26AA-5199AAEA3627</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA7A55F6-86DF-0AAB-3F5A-EEFDC4CAACA0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

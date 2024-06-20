@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5E2DAD3-EF01-81BF-B12B-FE6F3FB80E63" name="LOGIN">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>A9566AA4-7B62-3195-076D-6C69F3DB0743</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_login" id="53814BFB-97BB-C4BC-B9F1-80A70C98A102">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>9B12A2ED-9C83-6753-4738-B768B01F8AA7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="id_usuario" id="B1C5AE5D-4B3C-A7E2-A39A-7EF9D1A22097">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>B7BD3773-9700-33F7-D9D1-D7D813847843</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF2BFD07-BC55-3B91-8876-F2B67EEFE012" referredColumn="2FB4FDC5-BBC8-872C-6A88-4E5F821A5038"/>
+</associations>
+</Column>
+<Column name="email" id="555A4DF6-89C9-2CBE-B356-4BE7E6F4F5FF">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>E5316B3D-DE42-33B5-07FE-F53B4A4DFA51</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="EC61E8EA-1068-FDE8-8255-7B4460439BBF">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>BB6723D1-850D-5B2A-A86B-745EE83FEB91</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_login" id="386D5722-0BCA-1762-D058-2510708B3260">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>A65C6160-7C31-9B63-10E4-C491843554DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F10CD9D7-366B-5E48-4DCD-7FD5A96BD78A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_login" id="BB1CEB0E-950A-8813-BAC4-D16AA9421B20">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>4CDC4EB7-E755-7215-131A-C0FE5FD0DC2B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8F6253C-9940-628B-4AEE-5AD1FC31A993" referredColumn="34A8C562-4BEE-C6BC-B709-2F4B131B9365"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A3F89A0-23AA-42DE-140D-F4753CB9DE2C" name="login_pk">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<importedID>212DB96D-F06B-1A01-D894-95A790B43DF9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53814BFB-97BB-C4BC-B9F1-80A70C98A102"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31448D2C-A48F-A7F2-DF16-B534DE11ABB8" name="fk_tipo_login">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB1CEB0E-950A-8813-BAC4-D16AA9421B20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A675804E-FE3A-415C-284F-D0927AD235AD" name="fk_usuario">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1C5AE5D-4B3C-A7E2-A39A-7EF9D1A22097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

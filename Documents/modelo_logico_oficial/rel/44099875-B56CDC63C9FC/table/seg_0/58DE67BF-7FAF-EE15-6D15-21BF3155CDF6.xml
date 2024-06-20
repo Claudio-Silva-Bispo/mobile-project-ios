@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58DE67BF-7FAF-EE15-6D15-21BF3155CDF6" name="TIPOUSUARIO">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>4A02EE69-9852-726B-80AC-0000EF3A0A9B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_usuario" id="AC92A2E4-FC33-E9A5-16F1-E0FFA8D685D3">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>E9F7513D-FA8D-5AA9-DF9F-F41520E18FD7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1B6487CF-D9B4-CA68-B4FF-53DF6F15A69C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="descricao" id="37800109-F82A-F6B8-6819-8CFEDF93A808">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>185A8A6A-D8FB-C752-8DBF-69AED0BE0D3A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BCF04A92-610D-D7BF-06BE-599683212E1B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0F63016-C20E-ADD2-ACA6-9D1EBA5CDCEB" name="tipousuario_pk">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>44C42EDF-E200-6F09-77B7-477CAE9E7FD3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC92A2E4-FC33-E9A5-16F1-E0FFA8D685D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

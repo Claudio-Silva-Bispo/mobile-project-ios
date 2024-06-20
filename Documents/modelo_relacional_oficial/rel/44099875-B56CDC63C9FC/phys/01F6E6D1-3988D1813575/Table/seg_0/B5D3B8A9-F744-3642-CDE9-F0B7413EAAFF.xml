@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="USUARIO" directorySegmentName="seg_0" id="B5D3B8A9-F744-3642-CDE9-F0B7413EAAFF">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="telefone" id="0C6D819D-CD46-C1DE-FB5F-C79E063361FA">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_usuario" id="2FB4FDC5-BBC8-872C-6A88-4E5F821A5038">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="nome" id="7AD18780-DA55-B95D-C9DA-FEC116636FA2">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="senha" id="A2A4D816-C841-59BE-F8CB-5F9D8062FCBE">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tipo_usuario" id="A9D4E1C9-3E6B-3171-ACCC-488D4DB920D6">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="F691179C-7B84-08DC-6904-4C580BD0E27C">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sobrenome" id="F744EA8F-1038-C810-8532-4F91E1178EC6">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_tipo_usuario" id="BF1C9EF2-B61A-C62F-B92B-58AEE2750A9F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="usuario_pk" id="C11ECC82-E3EF-D1CD-D5A8-780048156999">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="email_unique" id="0AF625A3-9967-2FCF-BE4A-E04C1A6F1170">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:51:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

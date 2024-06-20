@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LOGIN" directorySegmentName="seg_0" id="D41DAF6E-77EF-4C16-DACA-ECD983C271AF">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:27 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_login" id="0D8D78E1-9962-CEA0-F7AC-68CC696ECAD9">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="id_tipo_login" id="35E4C1BC-BC84-FAEB-04F5-904BCD12A43A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="8F742A31-7E8D-B148-1DC7-C1770D6EA396">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_usuario" id="A4CEF16A-9AFA-1772-2F59-C163EECF3ADE">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_login" id="A5C08E5F-EC17-B463-2EBC-6DDA12AC9030">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="senha" id="AFE4DA95-F9AA-8BA5-821B-C5473F3AFA70">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_usuario" id="5F82A509-3927-BC2A-047E-8C1050CFE3A3">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_tipo_login" id="76FB5A63-C8C1-ED1C-84DD-4BE8CC5C35DA">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="login_pk" id="92D52D15-AC78-CE7E-7657-A9A35237511D">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62DE1A75-8360-1236-F376-7CB4DAB7D4B8" name="USUARIO">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>5E0CDCD1-DFAF-5C04-E6B9-D00F0783BB2D</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id usuario" id="C91D6D6D-275E-7031-2C4C-06FEF8815B85">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>E18C13BB-D6DC-38DD-08D7-66ACAA40D460</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="3CFDE4B7-4408-6F2A-5440-CDBEF2683A6C">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>BABEFBB8-547A-1156-9CBB-B7C5946EB90B</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sobrenome" id="73317BCE-ED28-0ABE-7133-F39231326203">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>0885F0EF-F746-CCA2-9706-FA8FB64F7194</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="A04EFA6B-CB16-777F-A73F-E598A9BC4511">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>C53EBC74-1117-F876-2CED-0C7B1B3D90FE</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="senha" id="FA282B71-87B2-DFD7-2135-C3AC31A16CC6">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>75B6049B-4228-FB51-DE1D-8933F719D621</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="34CB5DD1-DF71-5328-593A-CB7C638CEC51">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>F5016BA8-CEFA-C7AF-EF45-7634AEC9BD22</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id tipo usuario" id="84F98B48-4809-26B0-CF29-7AD5B3D2AEFB">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>2D84985C-15EB-F0F0-A8DD-DE79B039FD7F</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<referedAttribute>EEF95248-D189-700A-0CC9-B25A3EA94FE5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="736BD3F4-DE3F-710A-EFE3-7CC5E92E89D6" name="email unique">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>CBA50F58-997D-AFBF-5E51-0C13897714A3</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A04EFA6B-CB16-777F-A73F-E598A9BC4511</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F257E93A-5027-20A2-D15C-D363E5DD14C9" name="usuario pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>4FC52E46-99F3-3878-B0D8-B549E31CD4EF</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C91D6D6D-275E-7031-2C4C-06FEF8815B85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

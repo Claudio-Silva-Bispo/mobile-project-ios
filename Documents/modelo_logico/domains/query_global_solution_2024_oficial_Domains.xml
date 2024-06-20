@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="query_global_solution_2024_oficial_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:27 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>query_global_solution_2024_oficial_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="DECIMAL_10_2_0" id="23C2CDFF-FE47-23E2-AC79-BFFA16507618">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>query_global_solution_2024_oficial_Domains</fileName>
+<logicalDatatype>LOGDT026</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="30938782-EC6C-A509-2249-35C52C814C0D">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>query_global_solution_2024_oficial_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="64B063EB-83B8-E85A-6FB6-AE544A957C22">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<fileName>query_global_solution_2024_oficial_Domains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="819E0B79-D320-5C6E-0F61-F291E28FCEE2">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:01:27 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>255</dataTypeSize>
+<fileName>query_global_solution_2024_oficial_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30444CB5-0DFB-CD11-70C4-F5234AC1CA90" name="INVESTIDOR">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>BC69356B-ADAF-4B28-FCAF-C0235E3738E3</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id investidor" id="729E22B9-9F20-3DF5-84E3-8B94843E8234">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>ADE7FFEE-440C-356F-FC7C-DC16814F7AF8</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>04FCA5F5-B3D9-A754-DB8C-D2FFCB8B660F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="DE64B8E3-E029-E8C6-705C-A175420F086C">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>31C609B1-ADDA-0426-68FC-E4AF0F7C8930</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="18413E46-68BE-44E6-A5D5-69672CEDC7A6">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>3BF3A416-357D-A6B2-B43A-AD039617CCAB</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="E03AD83B-F097-CFD4-AC9B-7E326CAA1A5C">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>97A08502-A412-F550-F8CD-73DD973606C5</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo investidor" id="452D56C2-71F7-1ED4-349A-A2A9A8C3B81B">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>579EC88A-E555-A1EC-5FC7-0992778296CB</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome empresa" id="97E98CB9-D865-EC79-E801-96CE671107C2">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>EA9D43B4-C4F1-31C8-84AE-91C058DD6B54</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantia contribuida" id="45AAFD32-490F-E867-2458-6DB35FEFCFA7">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>3788BC9D-BF54-B0DF-E97A-112138680B4D</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>23C2CDFF-FE47-23E2-AC79-BFFA16507618</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data investimento" id="C7429DAB-8DB9-689D-04A5-400548726AEB">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>BAEB6974-6372-9299-47C7-D2F95D616358</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>64B063EB-83B8-E85A-6FB6-AE544A957C22</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mensagem" id="DCB8C975-9E2C-0D41-07D8-75171543A229">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>B63DE421-A7B8-9738-5C47-5FAF6E8B1026</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>819E0B79-D320-5C6E-0F61-F291E28FCEE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="95E9B5F6-5E6C-B367-3829-0D719E615F05" name="investidor pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 19:08:13 UTC</createdTime>
+<generatorID>603C083C-0126-AAAC-9C3F-3C93133DD128</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="BC92B19B-5BE7-32A7-74A4-6A4B3A5C5379" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>729E22B9-9F20-3DF5-84E3-8B94843E8234</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

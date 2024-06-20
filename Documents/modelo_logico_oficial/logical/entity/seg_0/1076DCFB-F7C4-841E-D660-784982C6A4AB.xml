@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1076DCFB-F7C4-841E-D660-784982C6A4AB" name="NEWSLETTER">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>B02677D9-FE32-9CDC-C100-CEF0B290BB87</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id news" id="2F10117A-98B0-AF91-68F6-4DBCADBE3EA0">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>85C6517E-AF5F-B0BB-44DD-63F0D605A75A</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>D5AF5481-6B1A-2C1C-A61E-F81186915B24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="A66C839A-920B-D6C9-1161-E16CEE77F409">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>41FD41E4-6145-EF8C-D8B5-238439545804</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data envio" id="9CD2331C-81C1-7C74-B030-4F3E5623A99F">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>D20067D5-8122-AF16-785F-C7ABCB8B6B36</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>D5AF5481-6B1A-2C1C-A61E-F81186915B24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="8823BBFF-113B-662C-4261-843B8B5F7D2A">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>21252C13-40DA-CC50-CE7D-72E19947225E</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2064BA1D-69AF-E42E-7278-D64504542220" name="newsletter pk">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 22:01:07 UTC</createdTime>
+<generatorID>2183DC93-0CD4-9970-AE8B-41369B387788</generatorID>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<engineerTo>
+<item key="963EC051-DEFB-4069-7563-4CA5B51A631B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2F10117A-98B0-AF91-68F6-4DBCADBE3EA0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

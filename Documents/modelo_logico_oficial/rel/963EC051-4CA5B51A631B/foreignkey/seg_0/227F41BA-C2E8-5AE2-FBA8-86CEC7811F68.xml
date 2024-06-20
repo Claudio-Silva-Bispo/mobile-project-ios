@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="227F41BA-C2E8-5AE2-FBA8-86CEC7811F68" containerWithKeyObject="6D0CA5BB-A29E-2FA4-DE9A-A231F23348A4" localFKIndex="0F4634A1-4A89-C1D5-4A4A-1C067BCBF757" name="fk_id_condicao">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>E47C5293-1BC2-30E2-A946-6CC12EC88C05</importedID>
+<referredTableLongName>CONDICAOANIMAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A81BEB7C-154D-80AB-DE62-FED2F42FE55C</referredTableID>
+<keyObject>3FA77553-AE00-F216-1214-775A4ACF5059</keyObject>
+<referredKeyID>3FA77553-AE00-F216-1214-775A4ACF5059</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_condicao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

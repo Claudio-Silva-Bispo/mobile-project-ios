@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FEEF3B3-BA8F-CACF-D288-CA7082141121" name="INVESTIDOR">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>72DE537F-8454-DBE3-EDCB-FABF66C458E2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_investidor" id="7040F13D-1F4C-FDDD-36F9-5B882495263F">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>843621E6-6562-008D-19B1-B9913FB85A9E</importedID>
+<use>0</use>
+<domain>D5AF5481-6B1A-2C1C-A61E-F81186915B24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="nome" id="902D4BBA-6B42-C437-1CE7-22C1AAB1C7B0">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>62281CFE-7055-C6DB-0F7D-21FD3000C86C</importedID>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="3E7E7DDD-1200-F24B-7A31-A8179E99C14F">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>3C888A77-96B6-A28C-F5E9-FC14430A9E10</importedID>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="2DB3BF78-1652-FC39-1AC4-000446B8DEC1">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>02875E5F-9AD7-C04D-3A76-94F2985A3F76</importedID>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_empresa" id="67309B5F-51D3-CACA-1081-FF27CC3AEDE7">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>7E9AFF24-223B-9F6F-078C-1AEC4F4059EB</importedID>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantia_contribuida" id="65277700-71B0-879E-88FA-43EADD5D1191">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>3FB59683-CDBF-B943-09D4-39247CA6D916</importedID>
+<use>0</use>
+<domain>FDC23C4A-E690-60DE-0E10-E921333594BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_investimento" id="94CE6984-EB92-E0CB-11AC-D9E9DED488C2">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>9A256C69-E8D1-3AD3-A7FF-EE2D96D5BDC3</importedID>
+<use>0</use>
+<domain>26C0E9B7-89FE-F680-F906-FD21C36BD3BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="E936648C-4BBD-F48F-E06B-CA020D6F0B2B">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>8ADE8904-581C-901F-132B-683E6EE02257</importedID>
+<use>0</use>
+<domain>6416ADA2-6FC7-21AE-D3CB-432B7FA85898</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FB872D7-79C2-4F33-9A8A-91D40D59B931" name="investidor_pk">
+<sourceDDLFile>query_global_solution_2024_oficial.sql</sourceDDLFile>
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 21:59:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_oficial</ownerDesignName>
+<importedID>D95EC248-26BE-4EA0-11AA-056D52AB0106</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7040F13D-1F4C-FDDD-36F9-5B882495263F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

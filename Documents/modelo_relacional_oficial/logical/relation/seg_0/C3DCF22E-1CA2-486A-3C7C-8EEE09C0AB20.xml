@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_tipo_residuo" directorySegmentName="seg_0" id="C3DCF22E-1CA2-486A-3C7C-8EEE09C0AB20">
+<createdBy>claudiobispo</createdBy>
+<createdTime>2024-05-31 18:56:46 UTC</createdTime>
+<generatorID>9EEC8E80-77EA-670C-AB22-0A59C55CCA67</generatorID>
+<ownerDesignName>modelo_relacional_oficial</ownerDesignName>
+<engineerTo>
+<item key="44099875-50C7-C89E-04B8-B56CDC63C9FC" value="true"/>
+</engineerTo>
+<sourcePk>6A8D27AF-D4F0-940E-7DB2-B90E581DF2A9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A65399B3-D154-1E74-CA1D-1FD53F7A75BF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7D72B729-E218-B31A-A274-354DBB3EF7B7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
