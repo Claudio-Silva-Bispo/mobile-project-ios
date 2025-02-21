@@ -1,0 +1,29 @@
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+const SucessoScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Cadastro Realizado!</Text>
+      <Button title="Voltar para a Home" onPress={() => navigation.navigate("Home")} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: "#081828"
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: "#fff"
+  },
+});
+
+export default SucessoScreen;
