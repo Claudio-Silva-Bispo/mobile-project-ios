@@ -25,7 +25,7 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   };
 
   return (
-    <ImageBackground source={require("../assets/BackGround/opcao-um.png")} style={styles.background}>
+    <ImageBackground source={require("../assets/Background/opcao-um.png")} style={styles.background}>
 
       <View style={styles.container}>
         {/*<Text style={styles.title}>Login</Text>*/}

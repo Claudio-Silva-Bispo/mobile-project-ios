@@ -44,7 +44,7 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   };
 
   return (
-    <ImageBackground source={require("../assets/tela-cadastro-dois.png")} style={styles.background}>
+    <ImageBackground source={require("../assets/Background/tela-cadastro-dois.png")} style={styles.background}>
 
       <View style={styles.container}>
         {/*<Text style={styles.title}>Cadastro</Text>*/}
@@ -67,6 +67,7 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
         <TouchableOpacity style={styles.button} onPress={handleCadastro}>
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
+        
       </View>
 
     </ImageBackground>

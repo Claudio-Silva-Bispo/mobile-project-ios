@@ -48,7 +48,8 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cadastro de Dados Pessoais</Text>
+      <Text style={styles.title}>Delfos Machine</Text>
+      <View style={styles.tittleLine} />
 
       {step === 1 && (
         <View style={styles.section}>
@@ -183,7 +184,14 @@ const styles = StyleSheet.create({
     fontSize: 24, 
     fontWeight: "bold", 
     textAlign: "center", 
-    marginBottom: 20 },
+    marginBottom: 20 ,
+  },
+  tittleLine: {
+    width: 100,
+    height: 2,
+    backgroundColor: "#ccc",
+    marginTop: 5,
+  },
   section: { 
     backgroundColor: "#fff", 
     padding: 15, 

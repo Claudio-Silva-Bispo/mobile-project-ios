@@ -7,15 +7,15 @@ const SessaoRestritaScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
       <Text style={styles.title}>Área Restrita</Text>
 
       <TouchableOpacity style={styles.card} onPress={() => navigation.navigate("DadoPessoal")}>
-        <Text style={styles.cardText}>📋 Cadastrar Dados Pessoais</Text>
+        <Text style={styles.cardText}>📋 Cadastrar Dados</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.card} onPress={() => navigation.navigate("ConsultarDados")}>
-        <Text style={styles.cardText}>🔍 Consultar Dados Cadastrais</Text>
+        <Text style={styles.cardText}>🔍 Consultar Dados</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.card} onPress={() => navigation.navigate("Agendamentos")}>
-        <Text style={styles.cardText}>📅 Ver Agendamentos</Text>
+        <Text style={styles.cardText}>📅 Agendamentos</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.logoutButton} onPress={() => navigation.navigate("Home")}>
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
+    width: '100%'
   },
   title: {
     fontSize: 24,
@@ -55,6 +56,8 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#D32F2F",
     borderRadius: 10,
+    width: "90%",
+    alignItems: 'center'
   },
   logoutText: {
     fontSize: 16,

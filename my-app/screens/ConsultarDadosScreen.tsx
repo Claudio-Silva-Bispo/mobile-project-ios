@@ -140,10 +140,17 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Data de Nascimento" value={dados.dataNascimento || ""} onChangeText={(text) => setDados({ ...dados, dataNascimento: text })} />
               <TextInput style={styles.input} placeholder="Idade" keyboardType="numeric" value={dados.idade || ""} onChangeText={(text) => setDados({ ...dados, idade: text })} />
               <TextInput style={styles.input} placeholder="Altura (m)" keyboardType="decimal-pad" value={dados.altura || ""} onChangeText={(text) => setDados({ ...dados, altura: text })} />
-              <Button title="Salvar" onPress={() => atualizarDados("t_dados_cadastrais", dados)} />
+              
+              {/*<Button title="Salvar" onPress={() => atualizarDados("t_dados_cadastrais", dados)} />*/}
+
+              <TouchableOpacity style={styles.button} onPress={() => atualizarDados("t_dados_cadastrais", dados)}>
+                <Text style={styles.buttonText}>Cadastrar</Text>
+              </TouchableOpacity>
+              
               <TouchableOpacity onPress={() => setStep(2)} style={styles.nextButton}>
                 <Text style={styles.buttonText}>→ Próximo</Text>
               </TouchableOpacity>
+
             </View>
           )}
 
@@ -257,14 +264,24 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#2196F3",
     borderRadius: 10,
-    width: "90%",
+    width: "100%",
     alignItems: "center",
+  },
+  button: {
+    width: "100%",
+    backgroundColor: "#08c8f8",
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
   },
   buttonText: {
     fontSize: 16,
-    color: "#fff",
     fontWeight: "bold",
+    color: "#081828",
   },
+  
 });
 
 
