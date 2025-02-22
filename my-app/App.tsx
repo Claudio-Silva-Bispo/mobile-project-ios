@@ -9,6 +9,7 @@ import SessaoRestritaScreen from './screens/SessaoRestritaScreen';
 import DadoPessoalScreen from './screens/DadoPessoalScreen';
 import ConsultarDadosScreen from './screens/ConsultarDadosScreen';
 import { StyleSheet } from "react-native";
+import CustomButton from "./components/CustomButton";
 
 
 const Stack = createStackNavigator();
@@ -20,13 +21,18 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       <Text style={styles.title}>Bem-vindo ao seu Agendamento Inteligente</Text>
 
       {/* Botões */}
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Cadastro")}>
+      {/*<TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Cadastro")}>
         <Text style={styles.buttonText}>Ir para Cadastro</Text>
-      </TouchableOpacity>
+      </TouchableOpacity>*/}
 
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
+      <CustomButton title="Cadastro" onPress={() => navigation.navigate("Cadastro")} />
+
+      <CustomButton title="Login" onPress={() => navigation.navigate("Login")} />
+
+
+      {/*<TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
         <Text style={styles.buttonText}>Ir para Login</Text>
-      </TouchableOpacity>
+    </TouchableOpacity>*/}
 
       {/* Rodapé */}
       <View style={styles.footer}>

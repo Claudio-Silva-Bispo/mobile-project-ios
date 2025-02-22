@@ -3,6 +3,7 @@ import { View, Text, TextInput, Button, Alert, StyleSheet, ImageBackground, Touc
 import { collection, addDoc, setDoc, doc } from "firebase/firestore";
 import { db, auth } from "../src/firebaseConfig"; // Importando a configuração do Firebase
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import CustomButton from '../components/CustomButton';
 
 const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -63,10 +64,8 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           value={senha}
           onChangeText={setSenha}
         />
-        {/*<Button title="Cadastrar" onPress={handleCadastro} /> */}
-        <TouchableOpacity style={styles.button} onPress={handleCadastro}>
-          <Text style={styles.buttonText}>Cadastrar</Text>
-        </TouchableOpacity>
+
+        <CustomButton title="Cadastrar" onPress={handleCadastro}/>
         
       </View>
 
@@ -115,20 +114,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%"
-  },
-  button: {
-    width: "90%",
-    backgroundColor: "#08c8f8",
-    paddingVertical: 14,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 10,
-  },
-  buttonText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#081828",
   },
   
 });

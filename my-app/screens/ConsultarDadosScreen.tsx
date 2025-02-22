@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, Alert, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { db, auth } from "../src/firebaseConfig";
+import CustomButton from "../components/CustomButton";
 
 const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const user = auth.currentUser;
@@ -15,65 +16,6 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
   const [dados, setDados] = useState<any>({});
   const [mensagem, setMensagem] = useState("");
   const [loading, setLoading] = useState(true);
-
-  {/*
-  useEffect(() => {
-    const buscarDados = async () => {
-      try {
-        const docRef = doc(db, "t_dados_cadastrais", user.uid);
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-          setDados(docSnap.data());
-        } else {
-          Alert.alert("Aviso", "Nenhum dado encontrado.");
-        }
-      } catch (error) {
-        console.error("Erro ao buscar dados:", error);
-        Alert.alert("Erro", "Não foi possível buscar os dados.");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    buscarDados();
-  }, []);
-  */}
-
-  {/*
-  useEffect(() => {
-    const buscarDados = async () => {
-      try {
-        const dadosCadastraisRef = doc(db, "t_dados_cadastrais", user.uid);
-        const enderecoResidenciaRef = doc(db, "t_endereco_residencia", user.uid);
-        const enderecoConsultaRef = doc(db, "t_endereco_preferencia", user.uid);
-        const diasPreferenciaRef = doc(db, "t_dias_preferencia", user.uid);
-        const turnoPreferenciaRef = doc(db, "t_turno_preferencia", user.uid);
-
-        const dadosCadastraisSnap = await getDoc(dadosCadastraisRef);
-        const enderecoResidenciaSnap = await getDoc(enderecoResidenciaRef);
-        const enderecoConsultaSnap = await getDoc(enderecoConsultaRef);
-        const diasPreferenciaSnap = await getDoc(diasPreferenciaRef);
-        const turnoPreferenciaSnap = await getDoc(turnoPreferenciaRef);
-
-        setDados({
-          ...dadosCadastraisSnap.exists() ? dadosCadastraisSnap.data() : {},
-          ...enderecoResidenciaSnap.exists() ? enderecoResidenciaSnap.data() : {},
-          ...enderecoConsultaSnap.exists() ? enderecoConsultaSnap.data() : {},
-          ...diasPreferenciaSnap.exists() ? diasPreferenciaSnap.data() : {},
-          ...turnoPreferenciaSnap.exists() ? turnoPreferenciaSnap.data() : {},
-        });
-
-      } catch (error) {
-        console.error("Erro ao buscar dados:", error);
-        Alert.alert("Erro", "Não foi possível buscar os dados.");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    buscarDados();
-  }, []);
-  */}
 
   useEffect(() => {
     const buscarDados = async () => {
@@ -140,12 +82,8 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Data de Nascimento" value={dados.dataNascimento || ""} onChangeText={(text) => setDados({ ...dados, dataNascimento: text })} />
               <TextInput style={styles.input} placeholder="Idade" keyboardType="numeric" value={dados.idade || ""} onChangeText={(text) => setDados({ ...dados, idade: text })} />
               <TextInput style={styles.input} placeholder="Altura (m)" keyboardType="decimal-pad" value={dados.altura || ""} onChangeText={(text) => setDados({ ...dados, altura: text })} />
-              
-              {/*<Button title="Salvar" onPress={() => atualizarDados("t_dados_cadastrais", dados)} />*/}
 
-              <TouchableOpacity style={styles.button} onPress={() => atualizarDados("t_dados_cadastrais", dados)}>
-                <Text style={styles.buttonText}>Cadastrar</Text>
-              </TouchableOpacity>
+              <CustomButton title="Cadastrar" onPress={() => atualizarDados("t_dados_cadastrais", dados)} width={'100%'}/>
               
               <TouchableOpacity onPress={() => setStep(2)} style={styles.nextButton}>
                 <Text style={styles.buttonText}>→ Próximo</Text>
@@ -162,7 +100,11 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Cidade" value={dados.cidadeResidencia || ""} onChangeText={(text) => setDados({ ...dados, cidadeResidencia: text })} />
               <TextInput style={styles.input} placeholder="Rua" value={dados.ruaResidencia || ""} onChangeText={(text) => setDados({ ...dados, ruaResidencia: text })} />
               <TextInput style={styles.input} placeholder="Número" value={dados.numeroResidencia || ""} onChangeText={(text) => setDados({ ...dados, numeroResidencia: text })} />
-              <Button title="Salvar" onPress={() => atualizarDados("t_endereco_residencia", dados)} />
+              {/*<Button title="Salvar" onPress={() => atualizarDados("t_endereco_residencia", dados)} />*/}
+
+              <CustomButton title="Salvar" onPress={() => atualizarDados("t_endereco_residencia", dados)} width={'100%'}/>
+              
+              
               <TouchableOpacity onPress={() => setStep(1)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
               </TouchableOpacity>
@@ -180,7 +122,10 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Cidade" value={dados.cidadeConsulta || ""} onChangeText={(text) => setDados({ ...dados, cidadeConsulta: text })} />
               <TextInput style={styles.input} placeholder="Rua" value={dados.ruaConsulta || ""} onChangeText={(text) => setDados({ ...dados, ruaConsulta: text })} />
               <TextInput style={styles.input} placeholder="Número" value={dados.numeroConsulta || ""} onChangeText={(text) => setDados({ ...dados, numeroConsulta: text })} />
-              <Button title="Salvar" onPress={() => atualizarDados("t_endereco_preferencia", dados)} />
+              {/*<Button title="Salvar" onPress={() => atualizarDados("t_endereco_preferencia", dados)} />*/}
+              
+              <CustomButton title="Salvar" onPress={() => atualizarDados("t_endereco_preferencia", dados)} width={'100%'}/>
+              
               <TouchableOpacity onPress={() => setStep(2)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
               </TouchableOpacity>
@@ -192,11 +137,29 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
 
           {step === 4 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Preferências</Text>
+              <Text style={styles.sectionTitle}>Dia de preferência</Text>
               <TextInput style={styles.input} placeholder="Dias da Semana" value={dados.diasSemana || ""} onChangeText={(text) => setDados({ ...dados, diasSemana: text })} />
-              <TextInput style={styles.input} placeholder="Turno" value={dados.turno || ""} onChangeText={(text) => setDados({ ...dados, turno: text })} />
-              <Button title="Salvar" onPress={() => atualizarDados("t_dias_preferencia", dados)} />
+              
+              <CustomButton title="Salvar" onPress={() => atualizarDados("t_dias_preferencia", dados)} width={'100%'}/>
+              
               <TouchableOpacity onPress={() => setStep(3)} style={styles.prevButton}>
+                <Text style={styles.buttonText}>← Voltar</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => setStep(5)} style={styles.nextButton}>
+                <Text style={styles.buttonText}>→ Próximo</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+
+          {step === 5 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Turno de preferência</Text>
+              <TextInput style={styles.input} placeholder="Turno" value={dados.turno || ""} onChangeText={(text) => setDados({ ...dados, turno: text })} />
+
+              <CustomButton title="Salvar" onPress={() => atualizarDados("t_turno_preferencia", dados)} width={'100%'}/>
+              
+              <TouchableOpacity onPress={() => setStep(4)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
               </TouchableOpacity>
             </View>
@@ -256,7 +219,7 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#D32F2F",
     borderRadius: 10,
-    width: "90%",
+    width: "100%",
     alignItems: "center",
   },
   nextButton: {

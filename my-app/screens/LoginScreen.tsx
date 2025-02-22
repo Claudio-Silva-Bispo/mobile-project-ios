@@ -3,6 +3,7 @@ import { View, Text, TextInput, Button, Alert, StyleSheet, TouchableOpacity, Ima
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../src/firebaseConfig"; 
 import GoogleAuth from "../src/GoogleAuth";
+import CustomButton from "../components/CustomButton";
 
 const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -44,11 +45,8 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           value={senha}
           onChangeText={setSenha}
         />
-        {/*<Button title="Entrar" onPress={handleLogin} /> */}
 
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
-            <Text style={styles.buttonText}>Login</Text>
-          </TouchableOpacity>
+        <CustomButton title="Login" onPress={handleLogin}/>
 
         {/* Botão de Login com Google, para facilitar o acesso. */}
         {/*<GoogleAuth navigation={navigation}/>*/}
@@ -80,20 +78,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingLeft: 10,
     marginBottom: 10,
-  },
-  button: {
-    width: "90%",
-    backgroundColor: "#08c8f8",
-    paddingVertical: 14,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 10,
-  },
-  buttonText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#081828",
   },
   background: {
     flex: 1,
