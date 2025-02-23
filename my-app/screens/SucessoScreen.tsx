@@ -1,12 +1,15 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import CustomButton from '../components/CustomButton';
+import Footer from '../components/Footer';
 
 const SucessoScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Cadastro Realizado!</Text>
-      <CustomButton title="Voltar para a Home" onPress={() => navigation.navigate("Home")} />
+      <CustomButton title="Voltar para a Home" onPress={() => navigation.navigate("Home")} width={'90%'}/>
+
+      <Footer/>
     </View>
   );
 };

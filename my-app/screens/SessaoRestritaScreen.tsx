@@ -1,37 +1,24 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import CustomButton from "../components/CustomButton";
+import Footer from "../components/Footer";
 
 const SessaoRestritaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Área Restrita</Text>
 
-      {/*<TouchableOpacity style={styles.card} onPress={() => navigation.navigate("DadoPessoal")}>
-        <Text style={styles.cardText}>📋 Cadastrar Dados</Text>
-      </TouchableOpacity>*/}
+      <CustomButton title="📋 Cadastrar Dados" onPress={() => navigation.navigate("DadoPessoal")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 
-      <CustomButton title="📋 Cadastrar Dados" onPress={() => navigation.navigate("DadoPessoal")} backgroundColor="#2196F3" textColor="#ffff"/>
+      <CustomButton title="🔍 Consultar Dados" onPress={() => navigation.navigate("ConsultarDados")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 
-      {/*<TouchableOpacity style={styles.card} onPress={() => navigation.navigate("ConsultarDados")}>
-        <Text style={styles.cardText}>🔍 Consultar Dados</Text>
-      </TouchableOpacity>*/}
+      <CustomButton title="📅 Agendamentos" onPress={() => navigation.navigate("Agendamentos")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 
-      <CustomButton title="🔍 Consultar Dados" onPress={() => navigation.navigate("ConsultarDados")} backgroundColor="#2196F3" textColor="#ffff"/>
-
-      {/*<TouchableOpacity style={styles.card} onPress={() => navigation.navigate("Agendamentos")}>
-        <Text style={styles.cardText}>📅 Agendamentos</Text>
-      </TouchableOpacity>*/}
-
-      <CustomButton title="📅 Agendamentos" onPress={() => navigation.navigate("Agendamentos")} backgroundColor="#2196F3" textColor="#ffff"/>
-
-      {/*<TouchableOpacity style={styles.logoutButton} onPress={() => navigation.navigate("Home")}>
-        <Text style={styles.logoutText}>🚪 Sair</Text>
-      </TouchableOpacity>*/}
-
-      <CustomButton title="🚪 Sair" onPress={() => navigation.navigate("Home")} backgroundColor="#D32F2F" textColor="#fff"/>
+      <CustomButton title="🚪 Sair" onPress={() => navigation.navigate("Home")} backgroundColor="#D32F2F" textColor="#fff" width={'100%'}/>
       
+      <Footer textColor="#000"/>
     </View>
+    
   );
 };
 

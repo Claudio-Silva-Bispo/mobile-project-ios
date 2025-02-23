@@ -3,6 +3,7 @@ import { View, Text, TextInput, Button, Alert, StyleSheet, TouchableOpacity, Scr
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { db, auth } from "../src/firebaseConfig";
 import CustomButton from "../components/CustomButton";
+import Footer from "../components/Footer";
 
 const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const user = auth.currentUser;
@@ -83,7 +84,7 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Idade" keyboardType="numeric" value={dados.idade || ""} onChangeText={(text) => setDados({ ...dados, idade: text })} />
               <TextInput style={styles.input} placeholder="Altura (m)" keyboardType="decimal-pad" value={dados.altura || ""} onChangeText={(text) => setDados({ ...dados, altura: text })} />
 
-              <CustomButton title="Cadastrar" onPress={() => atualizarDados("t_dados_cadastrais", dados)} width={'100%'}/>
+              <CustomButton title="Atualizar" textColor="#fff" onPress={() => atualizarDados("t_dados_cadastrais", dados)} width={'100%'}/>
               
               <TouchableOpacity onPress={() => setStep(2)} style={styles.nextButton}>
                 <Text style={styles.buttonText}>→ Próximo</Text>
@@ -100,9 +101,8 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Cidade" value={dados.cidadeResidencia || ""} onChangeText={(text) => setDados({ ...dados, cidadeResidencia: text })} />
               <TextInput style={styles.input} placeholder="Rua" value={dados.ruaResidencia || ""} onChangeText={(text) => setDados({ ...dados, ruaResidencia: text })} />
               <TextInput style={styles.input} placeholder="Número" value={dados.numeroResidencia || ""} onChangeText={(text) => setDados({ ...dados, numeroResidencia: text })} />
-              {/*<Button title="Salvar" onPress={() => atualizarDados("t_endereco_residencia", dados)} />*/}
 
-              <CustomButton title="Salvar" onPress={() => atualizarDados("t_endereco_residencia", dados)} width={'100%'}/>
+              <CustomButton title="Atualizar" textColor="#fff" onPress={() => atualizarDados("t_endereco_residencia", dados)} width={'100%'}/>
               
               
               <TouchableOpacity onPress={() => setStep(1)} style={styles.prevButton}>
@@ -122,9 +122,8 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <TextInput style={styles.input} placeholder="Cidade" value={dados.cidadeConsulta || ""} onChangeText={(text) => setDados({ ...dados, cidadeConsulta: text })} />
               <TextInput style={styles.input} placeholder="Rua" value={dados.ruaConsulta || ""} onChangeText={(text) => setDados({ ...dados, ruaConsulta: text })} />
               <TextInput style={styles.input} placeholder="Número" value={dados.numeroConsulta || ""} onChangeText={(text) => setDados({ ...dados, numeroConsulta: text })} />
-              {/*<Button title="Salvar" onPress={() => atualizarDados("t_endereco_preferencia", dados)} />*/}
               
-              <CustomButton title="Salvar" onPress={() => atualizarDados("t_endereco_preferencia", dados)} width={'100%'}/>
+              <CustomButton title="Atualizar" textColor="#fff" onPress={() => atualizarDados("t_endereco_preferencia", dados)} width={'100%'}/>
               
               <TouchableOpacity onPress={() => setStep(2)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
@@ -140,7 +139,7 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <Text style={styles.sectionTitle}>Dia de preferência</Text>
               <TextInput style={styles.input} placeholder="Dias da Semana" value={dados.diasSemana || ""} onChangeText={(text) => setDados({ ...dados, diasSemana: text })} />
               
-              <CustomButton title="Salvar" onPress={() => atualizarDados("t_dias_preferencia", dados)} width={'100%'}/>
+              <CustomButton title="Atualizar" textColor="#fff" onPress={() => atualizarDados("t_dias_preferencia", dados)} width={'100%'}/>
               
               <TouchableOpacity onPress={() => setStep(3)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
@@ -157,7 +156,7 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
               <Text style={styles.sectionTitle}>Turno de preferência</Text>
               <TextInput style={styles.input} placeholder="Turno" value={dados.turno || ""} onChangeText={(text) => setDados({ ...dados, turno: text })} />
 
-              <CustomButton title="Salvar" onPress={() => atualizarDados("t_turno_preferencia", dados)} width={'100%'}/>
+              <CustomButton title="Atualizar" textColor="#fff" onPress={() => atualizarDados("t_turno_preferencia", dados)} width={'100%'}/>
               
               <TouchableOpacity onPress={() => setStep(4)} style={styles.prevButton}>
                 <Text style={styles.buttonText}>← Voltar</Text>
@@ -168,6 +167,8 @@ const ConsultarDadosScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
           {mensagem ? <Text style={styles.mensagem}>{mensagem}</Text> : null}
         </>
       )}
+
+      <Footer textColor='#000'/>
     </ScrollView>
   );
 };
@@ -242,7 +243,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#081828",
+    color: "#fff",
   },
   
 });

@@ -4,6 +4,7 @@ import { collection, addDoc, setDoc, doc } from "firebase/firestore";
 import { db, auth } from "../src/firebaseConfig"; // Importando a configuração do Firebase
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import CustomButton from '../components/CustomButton';
+import Footer from '../components/Footer';
 
 const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -13,13 +14,6 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const handleCadastro = async () => {
     console.log("🔹 Botão pressionado! Tentando cadastrar usuário...");
     try {
-
-      {/* 
-      const docRef = await addDoc(collection(db, "t_usuarios"), {
-        email: email,
-        senha: senha
-
-      */}
 
       const userCredential = await createUserWithEmailAndPassword(auth, email, senha);
       const user = userCredential.user;
@@ -65,8 +59,10 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           onChangeText={setSenha}
         />
 
-        <CustomButton title="Cadastrar" onPress={handleCadastro}/>
+        <CustomButton title="Cadastrar" onPress={handleCadastro} width={'90%'}/>
         
+        <Footer textColor='#fff'/>
+      
       </View>
 
     </ImageBackground>

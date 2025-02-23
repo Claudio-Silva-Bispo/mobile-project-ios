@@ -4,6 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../src/firebaseConfig"; 
 import GoogleAuth from "../src/GoogleAuth";
 import CustomButton from "../components/CustomButton";
+import Footer from "../components/Footer";
 
 const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -46,12 +47,14 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           onChangeText={setSenha}
         />
 
-        <CustomButton title="Login" onPress={handleLogin}/>
+        <CustomButton title="Login" onPress={handleLogin} width={'90%'}/>
 
         {/* Botão de Login com Google, para facilitar o acesso. */}
         {/*<GoogleAuth navigation={navigation}/>*/}
         
       </View>
+
+      <Footer textColor='#fff'/>
 
     </ImageBackground>
   );

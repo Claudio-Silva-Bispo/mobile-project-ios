@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Button, Alert, StyleSheet, TouchableOpacity } from "react-native";
 import { doc, setDoc } from "firebase/firestore";
 import { db, auth } from "../src/firebaseConfig";
+import Footer from "../components/Footer";
 
 const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const user = auth.currentUser;
@@ -60,9 +61,7 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <TextInput style={styles.input} placeholder="Data de Nascimento" value={dataNascimento} onChangeText={setDataNascimento} />
           <TextInput style={styles.input} placeholder="Idade" keyboardType="numeric" value={idade} onChangeText={setIdade} />
           <TextInput style={styles.input} placeholder="Altura (m)" keyboardType="decimal-pad" value={altura} onChangeText={setAltura} />
-          
-          {/*<Button title="Salvar" onPress={() => salvarDados("t_dados_cadastrais", { nome, sobrenome, cpf, dataNascimento, idade, altura })} />*/}
-
+    
           <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_dados_cadastrais", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
@@ -83,8 +82,6 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <TextInput style={styles.input} placeholder="Rua" value={ruaResidencia} onChangeText={setRuaResidencia} />
           <TextInput style={styles.input} placeholder="Número" value={numeroResidencia} onChangeText={setNumeroResidencia} />
           
-          {/*<Button title="Salvar" onPress={() => salvarDados("t_endereco_residencia", { cepResidencia, estadoResidencia, cidadeResidencia, ruaResidencia, numeroResidencia })} />*/}
-
           <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_residencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
@@ -107,9 +104,7 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <TextInput style={styles.input} placeholder="Cidade" value={cidadeResidencia} onChangeText={setCidadeResidencia} />
           <TextInput style={styles.input} placeholder="Rua" value={ruaResidencia} onChangeText={setRuaResidencia} />
           <TextInput style={styles.input} placeholder="Número" value={numeroResidencia} onChangeText={setNumeroResidencia} />
-          
-          {/*<Button title="Salvar" onPress={() => salvarDados("t_endereco_preferencia", { cepResidencia, estadoResidencia, cidadeResidencia, ruaResidencia, numeroResidencia })} />*/}
-
+ 
           <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
@@ -132,8 +127,6 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <Text style={styles.sectionTitle}>Preferências</Text>
           <TextInput style={styles.input} placeholder="Dias da Semana (ex: Segunda, Terça)" value={diasSemana.join(", ")} onChangeText={(text) => setDiasSemana(text.split(", "))} />
           
-          {/*<Button title="Salvar" onPress={() => salvarDados("t_dias_preferencia", { diasSemana })} />*/}
-
           <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_dias_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
@@ -154,9 +147,6 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <Text style={styles.sectionTitle}>Preferências</Text>
           <TextInput style={styles.input} placeholder="Turno (Manhã, Tarde, Noite)" value={turno} onChangeText={setTurno} />
           
-          {/*<Button title="Salvar Turno" onPress={() => salvarDados("t_turno_preferencia", { turno })} />
-          {mensagem ? <Text style={styles.mensagem}>{mensagem}</Text> : null}*/}
-
           <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_turno_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
@@ -164,10 +154,11 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <TouchableOpacity onPress={() => setStep(4)} style={styles.prevButton}>
             <Text style={styles.buttonText}>← Voltar</Text>
           </TouchableOpacity>
-
+          
+          <Footer textColor='#000'/>
         </View>
       )}
-
+      
     </View>
   );
 };

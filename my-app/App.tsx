@@ -10,6 +10,11 @@ import DadoPessoalScreen from './screens/DadoPessoalScreen';
 import ConsultarDadosScreen from './screens/ConsultarDadosScreen';
 import { StyleSheet } from "react-native";
 import CustomButton from "./components/CustomButton";
+import Footer from './components/Footer';
+import HomeClinicaScreen from './screens/HomeClinicaScreen';
+import CadastroClinicaScreen from './screens/CadastroClinicaScreen';
+import LoginClinicaScreen from './screens/LoginClinicaScreen';
+import SessaoRestritaClinicaScreen from './screens/SessaoRestritaClinicaScreen';
 
 
 const Stack = createStackNavigator();
@@ -20,25 +25,17 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       {/* Título */}
       <Text style={styles.title}>Bem-vindo ao seu Agendamento Inteligente</Text>
 
-      {/* Botões */}
-      {/*<TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Cadastro")}>
-        <Text style={styles.buttonText}>Ir para Cadastro</Text>
-      </TouchableOpacity>*/}
+      <Text style={styles.title}>Para Clientes</Text>
+      <CustomButton title="Cadastro" onPress={() => navigation.navigate("Cadastro")} width={'100%'}/>
 
-      <CustomButton title="Cadastro" onPress={() => navigation.navigate("Cadastro")} />
+      <CustomButton title="Login" onPress={() => navigation.navigate("Login")} width={'100%'}/>
 
-      <CustomButton title="Login" onPress={() => navigation.navigate("Login")} />
+      <Text style={styles.title}>Para Clínicas</Text>
 
-
-      {/*<TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
-        <Text style={styles.buttonText}>Ir para Login</Text>
-    </TouchableOpacity>*/}
+      <CustomButton title="Parceiros" textColor='#000' onPress={() => navigation.navigate("HomeClinica")} width={'100%'}/>
 
       {/* Rodapé */}
-      <View style={styles.footer}>
-        <Text style={styles.footerText}>Delfos Machine</Text>
-        <View style={styles.footerLine} />
-      </View>
+      <Footer textColor='#fff'/>
     </View>
   );
 };
@@ -71,22 +68,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#081828",
   },
-  footer: {
-    position: "absolute",
-    bottom: 20,
-    alignItems: "center",
-  },
-  footerText: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#f8f8f8",
-  },
-  footerLine: {
-    width: 100,
-    height: 2,
-    backgroundColor: "#ccc",
-    marginTop: 5,
-  },
 });
 export default function App() {
   return (
@@ -99,6 +80,10 @@ export default function App() {
         <Stack.Screen name="SessaoRestrita" component={SessaoRestritaScreen} />
         <Stack.Screen name="DadoPessoal" component={DadoPessoalScreen} />
         <Stack.Screen name="ConsultarDados" component={ConsultarDadosScreen} />
+        <Stack.Screen name="HomeClinica" component={HomeClinicaScreen} />
+        <Stack.Screen name="CadastroClinica" component={CadastroClinicaScreen} />
+        <Stack.Screen name="LoginClinica" component={LoginClinicaScreen} />
+        <Stack.Screen name="SessaoRestritaClinica" component={SessaoRestritaClinicaScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
