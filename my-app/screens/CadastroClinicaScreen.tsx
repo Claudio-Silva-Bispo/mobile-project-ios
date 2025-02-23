@@ -49,7 +49,7 @@ const CadastroClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           >
   
             <View style={styles.formContainer}>
-              <Text style={styles.title}>Cadastro da Clínica</Text>
+              <Text style={styles.title}>Cadastro</Text>
               <TextInput
                 style={styles.input}
                 placeholder="Nome da clínica"
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   input: {
-    width: "100%",
+    minWidth: "100%",
     height: 50,
     backgroundColor: "#fff",
     borderWidth: 1,

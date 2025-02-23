@@ -41,8 +41,8 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <ImageBackground source={require("../assets/Background/tela-cadastro-dois.png")} style={styles.background}>
 
-      <View style={styles.container}>
-        {/*<Text style={styles.title}>Cadastro</Text>*/}
+      <View style={styles.formContainer}>
+        <Text style={styles.title}>Cadastro</Text>
         <TextInput
           style={[styles.input, isFocused && styles.inputFocused]}
           placeholder="Email"
@@ -59,11 +59,11 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           onChangeText={setSenha}
         />
 
-        <CustomButton title="Cadastrar" onPress={handleCadastro} width={'90%'}/>
+        <CustomButton title="Cadastrar" textColor='#fff' onPress={handleCadastro} width={'100%'}/>
         
-        <Footer textColor='#fff'/>
-      
       </View>
+
+      <Footer textColor='#fff'/>
 
     </ImageBackground>
   );
@@ -75,19 +75,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,
-    width: '100%'
+    width: '100%',
+  },
+  formContainer: {
+    width: "90%",
+    backgroundColor: "rgba(255, 255, 255, 0.7)",
+    padding: 20,
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    textAlign: 'center',
   },
   input: {
     minWidth: '90%',
     height: 40,
     borderWidth: 1,
-    borderColor: '#ccc',
-    backgroundColor: 'transparent',
+    borderColor: "#08c8f8",
+    backgroundColor: '#fff',
     borderRadius: 5,
     paddingLeft: 5,
     marginBottom: 10,

@@ -13,6 +13,7 @@
     "@react-native-masked-view/masked-view": "^0.3.2",
     "@react-navigation/native": "^7.0.14",
     "@react-navigation/stack": "^7.1.1",
+    "core-js": "^3.40.0",
     "expo": "~52.0.32",
     "expo-auth-session": "~6.0.3",
     "expo-status-bar": "~2.0.1",
@@ -25,6 +26,7 @@
     "react-native-reanimated": "^3.16.7",
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.6.0",
+    "react-native-snap-carousel": "^1.3.1",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.13"
   },
@@ -33,6 +35,8 @@
     "@react-native-community/cli": "latest",
     "@types/react": "~18.3.12",
     "@types/react-native": "^0.73.0",
+    "@types/react-native-snap-carousel": "^3.8.11",
+    "metro-react-native-babel-preset": "^0.77.0",
     "typescript": "^5.7.3"
   },
   "private": true

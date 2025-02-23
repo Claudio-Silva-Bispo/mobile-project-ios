@@ -29,8 +29,8 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <ImageBackground source={require("../assets/Background/opcao-um.png")} style={styles.background}>
 
-      <View style={styles.container}>
-        {/*<Text style={styles.title}>Login</Text>*/}
+      <View style={styles.formContainer}>
+        <Text style={styles.title}>Login</Text>
         <TextInput
           style={styles.input}
           placeholder="Email"
@@ -47,7 +47,7 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           onChangeText={setSenha}
         />
 
-        <CustomButton title="Login" onPress={handleLogin} width={'90%'}/>
+        <CustomButton title="Login" textColor="#fff" onPress={handleLogin} width={'100%'}/>
 
         {/* Botão de Login com Google, para facilitar o acesso. */}
         {/*<GoogleAuth navigation={navigation}/>*/}
@@ -68,19 +68,32 @@ const styles = StyleSheet.create({
     padding: 20,
     width: '100%'
   },
+  formContainer: {
+    width: "90%",
+    backgroundColor: "rgba(255, 255, 255, 0.7)",
+    padding: 20,
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    textAlign: "center",
   },
   input: {
-    width: "90%",
+    width: "100%",
     height: 40,
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#08c8f8",
     borderRadius: 5,
     paddingLeft: 10,
     marginBottom: 10,
+    backgroundColor: '#fff'
   },
   background: {
     flex: 1,

@@ -15,6 +15,7 @@ import HomeClinicaScreen from './screens/HomeClinicaScreen';
 import CadastroClinicaScreen from './screens/CadastroClinicaScreen';
 import LoginClinicaScreen from './screens/LoginClinicaScreen';
 import SessaoRestritaClinicaScreen from './screens/SessaoRestritaClinicaScreen';
+import OnboardingScreen from './screens/OnboardingScreen';
 
 
 const Stack = createStackNavigator();
@@ -73,6 +74,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Onboarding" component={OnboardingScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Cadastro" component={CadastroScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
