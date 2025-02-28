@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text, Button, TouchableOpacity } from 'react-native';
@@ -16,7 +16,8 @@ import CadastroClinicaScreen from './screens/CadastroClinicaScreen';
 import LoginClinicaScreen from './screens/LoginClinicaScreen';
 import SessaoRestritaClinicaScreen from './screens/SessaoRestritaClinicaScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
-
+import { AuthProvider } from "./contexts/AuthProvider";
+import { auth } from './src/firebaseConfig';
 
 const Stack = createStackNavigator();
 
@@ -71,22 +72,38 @@ const styles = StyleSheet.create({
   },
 });
 export default function App() {
+
+  const [user, setUser] = useState<any>(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe(); // Cleanup listener
+  }, []);
+  
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Onboarding" component={OnboardingScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Cadastro" component={CadastroScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Sucesso" component={SucessoScreen} />
-        <Stack.Screen name="SessaoRestrita" component={SessaoRestritaScreen} />
-        <Stack.Screen name="DadoPessoal" component={DadoPessoalScreen} />
-        <Stack.Screen name="ConsultarDados" component={ConsultarDadosScreen} />
-        <Stack.Screen name="HomeClinica" component={HomeClinicaScreen} />
-        <Stack.Screen name="CadastroClinica" component={CadastroClinicaScreen} />
-        <Stack.Screen name="LoginClinica" component={LoginClinicaScreen} />
-        <Stack.Screen name="SessaoRestritaClinica" component={SessaoRestritaClinicaScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <AuthProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Onboarding" component={OnboardingScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Cadastro" component={CadastroScreen} />
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Sucesso" component={SucessoScreen} />
+          <Stack.Screen name="SessaoRestrita" 
+          component={SessaoRestritaScreen} />
+          <Stack.Screen name="DadoPessoal" component={DadoPessoalScreen} />
+          <Stack.Screen name="ConsultarDados" component={ConsultarDadosScreen} />
+          <Stack.Screen name="HomeClinica" component={HomeClinicaScreen} />
+          <Stack.Screen name="CadastroClinica" component={CadastroClinicaScreen} />
+          <Stack.Screen name="LoginClinica" component={LoginClinicaScreen} />
+
+          <Stack.Screen name="SessaoRestritaClinica" component={SessaoRestritaClinicaScreen} />
+        </Stack.Navigator>
+
+      </NavigationContainer>
+    </AuthProvider>
   );
 }

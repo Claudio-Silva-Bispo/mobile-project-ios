@@ -364,6 +364,28 @@ https://your-app.firebaseapp.com/__/auth/handler
 https://your-app.web.app/__/auth/handler
 Copie o novo Client ID Web e substitua no seu código.
 
+## Persistencia do login
+
+Para manter a sessão do usuário ativa mesmo após o fechamento do aplicativo e só encerrá-la quando o usuário fizer logout, você pode utilizar o AsyncStorage (ou uma biblioteca mais moderna como @react-native-async-storage/async-storage) para armazenar o token de autenticação ou as informações da sessão do usuário no dispositivo. Abaixo, vou te guiar passo a passo para implementar isso no seu projeto React Native.
+
+Passos para implementar sessão persistente:
+
+1.Instale o AsyncStorage:
+```bash
+    npm install @react-native-async-storage/async-storage
+    npm install @react-native-async-storage/async-storage
+```
+
+2. Crie um contexto de autenticação:
+
+3. Envolva sua aplicação com o AuthProvider:
+
+No arquivo principal da sua aplicação (por exemplo, App.js), envolva toda a aplicação com o AuthProvider.
+
+
+
+
+
 
 
 

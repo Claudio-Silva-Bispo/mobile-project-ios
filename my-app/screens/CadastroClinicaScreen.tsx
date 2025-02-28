@@ -10,6 +10,7 @@ const CadastroClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [perfil, setPerfil] = useState('');
 
   const handleCadastro = async () => {
     console.log("🔹 Botão pressionado! Tentando cadastrar clínica...");
@@ -20,12 +21,16 @@ const CadastroClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
       console.log("✅ Clínica cadastrada com sucesso! ID:", user.uid);
       Alert.alert("Sucesso", "Clínica cadastrada com sucesso!");
 
+      // Definir o perfil automaticamente como 'clinica' para ajudar no login entre as páginas.
+      const perfil = "clinica"; 
+
       await setDoc(doc(collection(db, "t_clinicas"), user.uid), {
         email: email,
+        perfil: perfil,
         criadoEm: new Date().toISOString(),
       });
 
-      console.log("✅ Dados da clínica salvos no Firestore!");
+      console.log("✅ Dados da clínica salvos no banco de dados!");
       Alert.alert("Sucesso", "Clínica cadastrada com sucesso!");
 
       navigation.navigate("Sucesso");

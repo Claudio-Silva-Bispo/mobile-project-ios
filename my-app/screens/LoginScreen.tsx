@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, Alert, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../src/firebaseConfig"; 
+import { auth, db } from "../src/firebaseConfig"; 
 import GoogleAuth from "../src/GoogleAuth";
 import CustomButton from "../components/CustomButton";
 import Footer from "../components/Footer";
+import { doc, getDoc } from "firebase/firestore";
 
 const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -14,17 +15,45 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     try {
       console.log("🔹 Tentando fazer login...");
 
-      await signInWithEmailAndPassword(auth, email, senha);
-      console.log("✅ Login bem-sucedido!");
+      //await signInWithEmailAndPassword(auth, email, senha);
+      const userCredential = await signInWithEmailAndPassword(auth, email, senha); 
+      const user = userCredential.user;
+      
+      {/*console.log("✅ Login bem-sucedido!");
       Alert.alert("Sucesso", "Login realizado com sucesso!");
 
-      navigation.navigate("SessaoRestrita");
+    navigation.navigate("SessaoRestrita");*/}
+
+    const userDocRef = doc(db, "t_usuarios", user.uid);
+      const userDoc = await getDoc(userDocRef);
+
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        const perfil = userData?.perfil;
+
+        if (perfil === "comum") {
+          console.log("✅ Login bem-sucedido!");
+          Alert.alert("Sucesso", "Login realizado com sucesso!");
+
+          // Navega para a Sessão Restrita de clientes
+          navigation.navigate("SessaoRestrita");
+        } else {
+          console.error("❌ Perfil inválido");
+          Alert.alert("Erro", "Você não tem permissão para acessar esta área.");
+        }
+      } else {
+        console.error("❌ Usuário não encontrado no Firestore");
+        Alert.alert("Erro", "Usuário não encontrado.");
+      }
+
 
     } catch (error: any) {
       console.error("❌ Erro ao fazer login:", error.message);
       Alert.alert("Erro", "Email ou senha incorretos.");
     }
   };
+
+
 
   return (
     <ImageBackground source={require("../assets/Background/opcao-um.png")} style={styles.background}>
@@ -114,3 +143,7 @@ const styles = StyleSheet.create({
 });
 
 export default LoginScreen;
+function login(token: string) {
+  throw new Error("Function not implemented.");
+}
+

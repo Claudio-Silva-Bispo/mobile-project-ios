@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Alert, StyleSheet, ImageBackground, KeyboardAvoidingView, Platform, ScrollView, TouchableWithoutFeedback, Keyboard } from "react-native";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../src/firebaseConfig"; 
+import { auth, db } from "../src/firebaseConfig"; 
 import CustomButton from "../components/CustomButton";
 import Footer from "../components/Footer";
+import { doc, getDoc } from "firebase/firestore";
 
 const LoginClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -13,11 +14,30 @@ const LoginClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     try {
       console.log("🔹 Tentando fazer login...");
 
-      await signInWithEmailAndPassword(auth, email, senha);
-      console.log("✅ Login bem-sucedido!");
-      Alert.alert("Sucesso", "Login realizado com sucesso!");
+      const userCredential = await signInWithEmailAndPassword(auth, email, senha); 
+      const user = userCredential.user;
 
-      navigation.navigate("SessaoRestritaClinica");
+      const userDocRef = doc(db, "t_clinicas", user.uid);
+      const userDoc = await getDoc(userDocRef);
+
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        const perfil = userData?.perfil;
+
+        if (perfil === "clinica") {
+          console.log("✅ Login bem-sucedido!");
+          Alert.alert("Sucesso", "Login realizado com sucesso!");
+
+          // Navega para a Sessão Restrita da Clínica
+          navigation.navigate("SessaoRestritaClinica");
+        } else {
+          console.error("❌ Perfil inválido");
+          Alert.alert("Erro", "Você não tem permissão para acessar esta área.");
+        }
+      } else {
+        console.error("❌ Usuário não encontrado no Firestore");
+        Alert.alert("Erro", "Usuário não encontrado.");
+      }
 
     } catch (error: any) {
       console.error("❌ Erro ao fazer login:", error.message);

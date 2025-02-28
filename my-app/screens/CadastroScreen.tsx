@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [perfil, setPerfil] = useState('');
   const [isFocused, setIsFocused] = useState(false);
 
   const handleCadastro = async () => {
@@ -18,11 +19,15 @@ const CadastroScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, senha);
       const user = userCredential.user;
 
+      // Definir o perfil automaticamente como 'comum' para ajudar no login entre as páginas.
+      const perfil = "comum"; 
+
       console.log("✅ Usuário cadastrado com sucesso! ID:", user.uid);
       Alert.alert("Sucesso", "Usuário cadastrado com sucesso!");
 
       await setDoc(doc(collection(db, "t_usuarios"), user.uid), {
         email: email,
+        perfil: perfil,
         criadoEm: new Date().toISOString(),
 
       });

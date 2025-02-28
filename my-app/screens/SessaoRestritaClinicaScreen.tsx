@@ -2,8 +2,24 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import CustomButton from "../components/CustomButton";
 import Footer from "../components/Footer";
+import { signOut } from "firebase/auth";
+import { auth } from "../src/firebaseConfig";
 
 const SessaoRestritaClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
+
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      //navigation.navigate("Home");
+      navigation.reset({
+        index: 0,
+        routes: [{ name: "Home" }]
+      });
+    } catch (error) {
+      console.error("Erro ao sair:", error);
+    }
+  };
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Área Restrita</Text>
@@ -18,7 +34,7 @@ const SessaoRestritaClinicaScreen: React.FC<{ navigation: any }> = ({ navigation
 
       <CustomButton title="📅 Consultas" onPress={() => navigation.navigate("Consultas")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 
-      <CustomButton title="🚪 Sair" onPress={() => navigation.navigate("Home")} backgroundColor="#D32F2F" textColor="#fff" width={'100%'}/>
+      <CustomButton title="🚪 Sair" onPress={handleSignOut} backgroundColor="#D32F2F" textColor="#fff" width={'100%'}/>
       
       <Footer textColor="#000"/>
     </View>
