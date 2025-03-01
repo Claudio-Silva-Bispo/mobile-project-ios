@@ -24,7 +24,7 @@ const SessaoRestritaClinicaScreen: React.FC<{ navigation: any }> = ({ navigation
     <View style={styles.container}>
       <Text style={styles.title}>Área Restrita</Text>
 
-      <CustomButton title="📋 Completar dados" onPress={() => navigation.navigate("DadosClinica")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
+      <CustomButton title="📋 Completar cadastro" onPress={() => navigation.navigate("DadosClinica")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 
       <CustomButton title="🔍 Consultar Dados" onPress={() => navigation.navigate("ConsultarDadosClinica")} backgroundColor="#2196F3" textColor="#ffff" width={'100%'}/>
 

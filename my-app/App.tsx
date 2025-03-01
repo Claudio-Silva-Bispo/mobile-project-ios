@@ -18,6 +18,9 @@ import SessaoRestritaClinicaScreen from './screens/SessaoRestritaClinicaScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import { AuthProvider } from "./contexts/AuthProvider";
 import { auth } from './src/firebaseConfig';
+import DadosClinicaScreen from './screens/DadosClinicaScreen';
+import ConsultarDadosClinicaScreen from './screens/ConsultarDadosClinicaScreen';
+import CadastrarMedicosScreen from './screens/CadastrarMedicosScreen';
 
 const Stack = createStackNavigator();
 
@@ -99,8 +102,10 @@ export default function App() {
           <Stack.Screen name="HomeClinica" component={HomeClinicaScreen} />
           <Stack.Screen name="CadastroClinica" component={CadastroClinicaScreen} />
           <Stack.Screen name="LoginClinica" component={LoginClinicaScreen} />
-
           <Stack.Screen name="SessaoRestritaClinica" component={SessaoRestritaClinicaScreen} />
+          <Stack.Screen name="DadosClinica" component={DadosClinicaScreen} />
+          <Stack.Screen name="ConsultarDadosClinica" component={ConsultarDadosClinicaScreen} />
+          <Stack.Screen name="CadastrarMedicos" component={CadastrarMedicosScreen} />
         </Stack.Navigator>
 
       </NavigationContainer>

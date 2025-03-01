@@ -24,12 +24,14 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
   const [cepResidencia, setCepResidencia] = useState("");
   const [estadoResidencia, setEstadoResidencia] = useState("");
   const [cidadeResidencia, setCidadeResidencia] = useState("");
+  const [bairroResidencia, setBairroResidencia] = useState("");
   const [ruaResidencia, setRuaResidencia] = useState("");
   const [numeroResidencia, setNumeroResidencia] = useState("");
 
   const [cepConsulta, setCepConsulta] = useState("");
   const [estadoConsulta, setEstadoConsulta] = useState("");
   const [cidadeConsulta, setCidadeConsulta] = useState("");
+  const [bairroConsulta, setBairroConsulta] = useState("");
   const [ruaConsulta, setRuaConsulta] = useState("");
   const [numeroConsulta, setNumeroConsulta] = useState("");
 
@@ -79,10 +81,11 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <TextInput style={styles.input} placeholder="CEP" value={cepResidencia} onChangeText={setCepResidencia} />
           <TextInput style={styles.input} placeholder="Estado" value={estadoResidencia} onChangeText={setEstadoResidencia} />
           <TextInput style={styles.input} placeholder="Cidade" value={cidadeResidencia} onChangeText={setCidadeResidencia} />
+          <TextInput style={styles.input} placeholder="Bairro" value={bairroResidencia} onChangeText={setBairroResidencia} />
           <TextInput style={styles.input} placeholder="Rua" value={ruaResidencia} onChangeText={setRuaResidencia} />
           <TextInput style={styles.input} placeholder="Número" value={numeroResidencia} onChangeText={setNumeroResidencia} />
           
-          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_residencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
+          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_residencia", { cepResidencia, estadoResidencia, cidadeResidencia, bairroResidencia, ruaResidencia, numeroResidencia })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
 
@@ -99,20 +102,22 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
     {step === 3 && (
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Endereço Preferência</Text>
-          <TextInput style={styles.input} placeholder="CEP" value={cepResidencia} onChangeText={setCepResidencia} />
-          <TextInput style={styles.input} placeholder="Estado" value={estadoResidencia} onChangeText={setEstadoResidencia} />
-          <TextInput style={styles.input} placeholder="Cidade" value={cidadeResidencia} onChangeText={setCidadeResidencia} />
-          <TextInput style={styles.input} placeholder="Rua" value={ruaResidencia} onChangeText={setRuaResidencia} />
-          <TextInput style={styles.input} placeholder="Número" value={numeroResidencia} onChangeText={setNumeroResidencia} />
+
+          <TextInput style={styles.input} placeholder="CEP" value={cepConsulta} onChangeText={setCepResidencia} />
+          <TextInput style={styles.input} placeholder="Estado" value={estadoConsulta} onChangeText={setEstadoResidencia} />
+          <TextInput style={styles.input} placeholder="Cidade" value={cidadeConsulta} onChangeText={setCidadeResidencia} />
+          <TextInput style={styles.input} placeholder="Bairro" value={bairroConsulta} onChangeText={setBairroResidencia} />
+          <TextInput style={styles.input} placeholder="Rua" value={ruaConsulta} onChangeText={setRuaResidencia} />
+          <TextInput style={styles.input} placeholder="Número" value={numeroConsulta} onChangeText={setNumeroResidencia} />
  
-          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
+          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_endereco_preferencia", { cepConsulta, estadoConsulta, cidadeConsulta,bairroConsulta, ruaConsulta, numeroConsulta })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
           
           
           {mensagem ? <Text style={styles.mensagem}>{mensagem}</Text> : null}
           
-          <TouchableOpacity onPress={() => setStep(1)} style={styles.prevButton}>
+          <TouchableOpacity onPress={() => setStep(2)} style={styles.prevButton}>
             <Text style={styles.buttonText}>← Voltar</Text>
           </TouchableOpacity>
           
@@ -127,7 +132,7 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <Text style={styles.sectionTitle}>Preferências</Text>
           <TextInput style={styles.input} placeholder="Dias da Semana (ex: Segunda, Terça)" value={diasSemana.join(", ")} onChangeText={(text) => setDiasSemana(text.split(", "))} />
           
-          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_dias_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
+          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_dias_preferencia", { diasSemana })}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
           
@@ -147,7 +152,7 @@ const CadastroPessoalScreen: React.FC<{ navigation: any }> = ({ navigation }) =>
           <Text style={styles.sectionTitle}>Preferências</Text>
           <TextInput style={styles.input} placeholder="Turno (Manhã, Tarde, Noite)" value={turno} onChangeText={setTurno} />
           
-          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_turno_preferencia", { nome, sobrenome, cpf, dataNascimento, idade, altura })}>
+          <TouchableOpacity style={styles.buttonSave} onPress={() => salvarDados("t_turno_preferencia", { turno})}>
             <Text style={styles.buttonText}>Salvar</Text>
           </TouchableOpacity>
           
