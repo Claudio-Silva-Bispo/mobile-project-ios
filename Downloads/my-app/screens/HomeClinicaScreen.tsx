@@ -11,7 +11,7 @@ const HomeClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     <ImageBackground source={require("../assets/background/tela-inicial-clinicas.png")} style={styles.background}>
       <View style={styles.container}>
         {/* Título */}
-        <Text style={styles.title}>Transforme a experiência dos seus pacientes com agendamentos inteligentes e gestão simplificada. Seja uma clínica parceira da Delfo sMachine e leve inovação ao seu atendimento!</Text>
+        <Text style={styles.title}>Transforme a experiência dos seus pacientes com agendamentos inteligentes e gestão simplificada. Seja uma clínica parceira da Delfos Machine e leve inovação ao seu atendimento!</Text>
 
         <CustomButton title="Cadastro" onPress={() => navigation.navigate("CadastroClinica")} width={'100%'} textColor='#fff'/>
 
@@ -20,7 +20,7 @@ const HomeClinicaScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       </View>
 
       {/* Rodapé */}
-      <Footer textColor='#000'/>
+      <Footer textColor='#0A4275'/>
 
     </ImageBackground>
   );
@@ -32,19 +32,19 @@ const styles = StyleSheet.create({
     //backgroundColor: "#081828",
     justifyContent: "center",
     alignItems: "flex-start",
+    width:'100%',
     paddingHorizontal: 20,
   },
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#f8f8f8",
+    color: "#0A4275",
     textAlign: "left",
     marginBottom: 40,
     maxWidth: '60%'
   },
   button: {
     backgroundColor: "#08c8f8",
-    width: "80%",
     paddingVertical: 12,
     borderRadius: 8,
     alignItems: "center",

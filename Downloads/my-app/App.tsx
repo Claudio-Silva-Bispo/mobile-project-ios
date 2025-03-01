@@ -43,7 +43,7 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
 
         </View>
         {/* Rodapé */}
-        <Footer textColor='#fff'/>
+        <Footer textColor='#0A4275'/>
     </ImageBackground>
   );
 };
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#063970",
+    color: "#0A4275",
     textAlign: "left",
     marginBottom: 50,
     width:'100%'

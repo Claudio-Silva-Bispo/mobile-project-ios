@@ -1,3 +1,11 @@
+
+🎨 Paleta de Azuis Escuros
+🔹 Primário: #063970 (Azul Escuro Profundo)
+🔹 Secundário: #0A4275 (Azul Noturno)
+🔹 Terciário: #0D4A8A (Azul Royal Escuro)
+🔹 Destaque: #125CA6 (Azul Vibrante Escuro)
+🔹 Neutro: #081828 (Azul Cobalto Escuro)
+
 Primeiro, precisa ter o Node.js instalado
 ```bash
     node -v
