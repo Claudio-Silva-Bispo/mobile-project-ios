@@ -13,7 +13,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   title, onPress, 
   backgroundColor = "#08c8f8", 
   textColor = "#081828",
-  width = "90%" }) => {
+  width = "100%" }) => {
 
   return (
     <TouchableOpacity style={[styles.button, { backgroundColor, width }  ]} onPress={onPress}>

@@ -31,10 +31,11 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
           {/* Título */}
           <Text style={styles.title}>Bem-vindo ao seu Agendamento Inteligente</Text>
 
-          <Text style={styles.titleSecond}>Para Clientes</Text>
-          <CustomButton title="Cadastro" textColor='#fff' onPress={() => navigation.navigate("Cadastro")} width={'100%'}/>
-
-          <CustomButton title="Login" textColor='#fff' onPress={() => navigation.navigate("Login")} width={'100%'}/>
+            <Text style={styles.titleSecond}>Para Clientes</Text>
+            <CustomButton title="Cadastro" textColor='#fff' onPress={() => navigation.navigate("Cadastro")} width={'100%'}/>
+          
+            <CustomButton title="Login" textColor='#fff' onPress={() => navigation.navigate("Login")} width={'100%'}/>
+    
 
           <Text style={styles.titleSecond}>Para Clínicas</Text>
 
@@ -52,32 +53,32 @@ const styles = StyleSheet.create({
     flex: 1,
     //backgroundColor: "#081828",
     justifyContent: "center",
-    alignItems: "flex-start",
-    paddingHorizontal: 20,
+    alignItems: "center",
+    paddingHorizontal: 10,
+    width: '100%'
   },
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#f8f8f8",
+    color: "#063970",
     textAlign: "left",
-    marginBottom: 40,
-    maxWidth: '70%'
+    marginBottom: 50,
+    width:'100%'
   },
   titleSecond: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#f8f8f8",
-    textAlign: "center",
-    marginBottom: 40,
-
+    color: "#063970",
+    textAlign: "left",
+    marginBottom: 30,
+    width:'100%'
   },
   button: {
     backgroundColor: "#08c8f8",
-    width: "80%",
     paddingVertical: 12,
     borderRadius: 8,
     alignItems: "center",
-    marginBottom: 20,
+    marginBottom: 40,
   },
   buttonText: {
     fontSize: 16,
@@ -103,7 +104,7 @@ export default function App() {
       setUser(user);
     });
 
-    return () => unsubscribe(); // Cleanup listener
+    return () => unsubscribe();
   }, []);
   
   return (
